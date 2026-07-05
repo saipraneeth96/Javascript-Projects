@@ -1,0 +1,148 @@
+/* ==========================
+   GLOBAL STYLES
+========================== */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", Arial, sans-serif;
+  background: linear-gradient(135deg, #4f46e5, #7c3aed);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+/* ==========================
+   CARD
+========================== */
+
+#converter {
+  width: 430px;
+  background: white;
+  padding: 35px;
+  border-radius: 18px;
+  box-shadow: 0 20px 45px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+/* ==========================
+   HEADING
+========================== */
+
+h2 {
+  color: #2d3748;
+  margin-bottom: 30px;
+  font-size: 2rem;
+}
+
+/* ==========================
+   INPUT
+========================== */
+
+#amount {
+  width: 100%;
+  padding: 14px;
+  font-size: 1rem;
+  border: 2px solid #d6d6d6;
+  border-radius: 10px;
+  outline: none;
+  margin-bottom: 20px;
+  transition: 0.3s;
+}
+
+#amount:focus {
+  border-color: #4f46e5;
+}
+
+/* ==========================
+   CURRENCY ROW
+========================== */
+
+#fromCurrency,
+#toCurrency {
+  padding: 10px;
+  border-radius: 8px;
+  border: 2px solid #d6d6d6;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#fromCurrency:focus,
+#toCurrency:focus {
+  border-color: #4f46e5;
+}
+
+#swap {
+  width: 40px;
+  height: 40px;
+  border: none;
+  border-radius: 50%;
+  background: #f1f5f9;
+  cursor: pointer;
+  transition: 0.3s;
+  font-size: 1.1rem;
+}
+
+#swap:hover {
+  background: #4f46e5;
+  color: white;
+  transform: rotate(180deg);
+}
+
+/* ==========================
+   CONVERT BUTTON
+========================== */
+
+.convert {
+  margin-top: 25px;
+  width: 100%;
+  padding: 14px;
+  background: #4f46e5;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.convert:hover {
+  background: #3b36b5;
+  transform: translateY(-3px);
+}
+
+/* ==========================
+   RESULT
+========================== */
+
+h3 {
+  margin-top: 30px;
+}
+
+#result {
+  display: block;
+  background: #eef2ff;
+  padding: 18px;
+  border-radius: 10px;
+  color: #3730a3;
+  font-size: 1.1rem;
+  font-weight: bold;
+  min-height: 28px;
+}
+.currency-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 25px;
+}
+
+.currency-row select {
+  flex: 1;
+}
